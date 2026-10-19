@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ef">
+  <title>Menú | Tu restaurante</title>
+  <meta name="description" content="Consulta nuestro menú, precios y disponibilidad.">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Inicio del menú">
+      <span class="brand-mark">M</span>
+      <span>
+        <strong>MI RESTAURANTE</strong>
+        <small>Menú digital</small>
+      </span>
+    </a>
+    <span class="header-note"><span class="live-dot"></span> Menú actualizado</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">HECHO PARA DISFRUTAR</p>
+      <h1>¿Qué se te antoja<br><em>hoy?</em></h1>
+      <p class="hero-copy">Explora nuestros sabores y encuentra tu favorito.</p>
+      <div class="search-wrap">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Buscar platillo o bebida..." autocomplete="off" aria-label="Buscar productos">
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="categoriesTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORA</p>
+          <h2 id="categoriesTitle">Nuestro menú</h2>
+        </div>
+        <span id="productCount" class="product-count"></span>
+      </div>
+      <nav id="categoryNav" class="category-nav" aria-label="Categorías del menú"></nav>
+      <div id="menuGrid" class="menu-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <span>⌕</span>
+        <h3>No encontramos resultados</h3>
+        <p>Prueba con otro nombre o selecciona una categoría.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand">MI RESTAURANTE</span>
+    <p>Gracias por visitarnos. Esperamos que disfrutes tu elección.</p>
+    <small>Los precios y la disponibilidad pueden cambiar.</small>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
